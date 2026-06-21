@@ -1,29 +1,29 @@
 # House Price Prediction
 
-## Project Overview
+## Overview
 
-This project predicts house sale prices using machine learning techniques.
+This project predicts house sale prices using Machine Learning techniques.
 
-The dataset was obtained from Kaggle's House Prices - Advanced Regression Techniques competition.
-
----
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Jupyter Notebook
+The dataset was obtained from Kaggle's House Prices competition.
 
 ---
 
-## Data Preprocessing
+## Dataset
+
+House Prices - Advanced Regression Techniques
+
+Total Records: 1460
+
+Features: 81
+
+---
+
+## Data Cleaning
 
 - Removed columns with excessive missing values
-- Handled missing numerical values using median imputation
-- Handled missing categorical values using mode imputation
-- Applied One-Hot Encoding to categorical features
+- Filled numerical missing values using median
+- Filled categorical missing values using mode
+- Applied One-Hot Encoding
 
 ---
 
@@ -31,36 +31,49 @@ The dataset was obtained from Kaggle's House Prices - Advanced Regression Techni
 
 ### Linear Regression
 
-Results:
-- MAE: 20,436
-- RMSE: 52,315
-- R² Score: 0.643
+R² Score: 0.643
 
 ### Random Forest Regressor
 
-Results:
-- MAE: 17,675
-- RMSE: 28,833
-- R² Score: 0.892
+R² Score: 0.892
+
+Cross Validation Score: 0.854
 
 ---
 
-## Conclusion
+## Feature Importance
 
-Random Forest significantly outperformed Linear Regression and achieved an R² score of approximately 89%.
+Top Features:
+
+- OverallQual
+- GrLivArea
+- TotalBsmtSF
+- GarageArea
+- YearBuilt
 
 ---
 
-## Dataset
+## Technologies
 
-Download the dataset from Kaggle:
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Matplotlib
+- Jupyter Notebook
 
-House Prices - Advanced Regression Techniques
+---
 
-Place:
+## Future Improvements
 
-train.csv
+- Hyperparameter Tuning
+- Streamlit Deployment
+- XGBoost Comparison
 
-inside:
+## Sale Price Distribution
 
-data/train.csv
+![Sale Price Distribution](screenshots/saleprice_distributio.png)
+
+## Feature Importance
+
+![Feature Importance](screenshots/feature_importance.png)
